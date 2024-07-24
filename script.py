@@ -34,12 +34,12 @@ def testar_conversao_temperatura():
 
     #  valores negativos
     temp_celsius = -10.0  
-    temp_fahrenheit = 24
+    temp_fahrenheit = 14
 
     # Converte Celsius para Fahrenheit
     f = ((9 * temp_celsius) / 5) + 32
     print(f'A temperatura de {temp_celsius:.2f}°C corresponde a {f:.2f}°F!')
-    assert abs(f - 24.0) < 1e-2, f"Erro: Esperado 14.0°F, mas obtivemos {f:.2f}°F"
+    assert abs(f - 14.0) < 1e-2, f"Erro: Esperado 14.0°F, mas obtivemos {f:.2f}°F"
 
     # Converte Fahrenheit para Celsius
     c = ((temp_fahrenheit - 32) * 5) / 9
